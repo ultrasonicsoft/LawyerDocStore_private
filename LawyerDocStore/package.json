@@ -1,0 +1,19 @@
+{
+    "name": "LawyerDocStore",
+    "version": "0.0.0",
+    "description": "LawyerDocStore",
+    "main": "server.js",
+    "author": {
+        "name": "Balram",
+        "email": ""
+    },
+    "dependencies": {
+        "express": "^3.3.5",
+        "express-myconnection": "*",
+        "express-validator": "^2.9.0",
+        "mysql": "^2.6.2",
+        "passport": "*",
+        "passport-local": "*",
+        "js2xmlparser": ""
+    }
+}

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>LawyerDocStore</Name>
+    <RootNamespace>LawyerDocStore</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>5dc58725-be00-48d8-8f67-ef1353c1ac19</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>server.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="server.js" />
+    <Compile Include="website\app.js" />
+    <Compile Include="website\dependencies\bootstrap-3.3.4-dist\js\bootstrap.js" />
+    <Compile Include="website\dependencies\bootstrap-3.3.4-dist\js\bootstrap.min.js" />
+    <Compile Include="website\dependencies\bootstrap-3.3.4-dist\js\jquery-1.11.2.min.js" />
+    <Compile Include="website\dependencies\bootstrap-3.3.4-dist\js\npm.js" />
+    <Compile Include="website\dependencies\components\version\interpolate-filter.js" />
+    <Compile Include="website\dependencies\components\version\interpolate-filter_test.js" />
+    <Compile Include="website\dependencies\components\version\version-directive.js" />
+    <Compile Include="website\dependencies\components\version\version-directive_test.js" />
+    <Compile Include="website\dependencies\components\version\version.js" />
+    <Compile Include="website\dependencies\components\version\version_test.js" />
+    <Compile Include="website\dependencies\html5-boilerplate_v5.1.0\js\main.js" />
+    <Compile Include="website\dependencies\html5-boilerplate_v5.1.0\js\plugins.js" />
+    <Compile Include="website\dependencies\html5-boilerplate_v5.1.0\js\vendor\jquery-1.11.2.min.js" />
+    <Compile Include="website\dependencies\html5-boilerplate_v5.1.0\js\vendor\modernizr-2.8.3.min.js" />
+    <Compile Include="website\directives\carousel\carousel.js" />
+    <Compile Include="website\directives\dashboard\dashboard.js" />
+    <Compile Include="website\directives\login\login.js" />
+    <Compile Include="website\directives\register\register.js" />
+    <Compile Include="website\directives\search-document\SearchDocumentCtrl.js" />
+    <Compile Include="website\SubmitCoupon\SubmitCouponCtrl.js" />
+    <Compile Include="website\ui-grid\ui-grid-unstable.js" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="website\app.css" />
+    <Content Include="website\dependencies\bootstrap-3.3.4-dist\css\bootstrap-theme.css" />
+    <Content Include="website\dependencies\bootstrap-3.3.4-dist\css\bootstrap-theme.css.map" />
+    <Content Include="website\dependencies\bootstrap-3.3.4-dist\css\bootstrap-theme.min.css" />
+    <Content Include="website\dependencies\bootstrap-3.3.4-dist\css\bootstrap.css" />
+    <Content Include="website\dependencies\bootstrap-3.3.4-dist\css\bootstrap.css.map" />
+    <Content Include="website\dependencies\bootstrap-3.3.4-dist\css\bootstrap.min.css" />
+    <Content Include="website\dependencies\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="website\dependencies\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="website\dependencies\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="website\dependencies\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="website\dependencies\bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\.editorconfig" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\.gitattributes" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\.gitignore" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\.htaccess" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\404.html" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\apple-touch-icon.png" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\browserconfig.xml" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\crossdomain.xml" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\css\main.css" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\css\normalize.css" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\doc\css.md" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\doc\extend.md" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\doc\faq.md" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\doc\html.md" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\doc\js.md" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\doc\misc.md" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\doc\TOC.md" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\doc\usage.md" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\favicon.ico" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\humans.txt" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\img\.gitignore" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\index.html" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\LICENSE.txt" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\robots.txt" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\tile-wide.png" />
+    <Content Include="website\dependencies\html5-boilerplate_v5.1.0\tile.png" />
+    <Content Include="website\directives\carousel\carousel.html" />
+    <Content Include="website\directives\dashboard\dashboard.html" />
+    <Content Include="website\directives\login\login.html" />
+    <Content Include="website\directives\register\register.html" />
+    <Content Include="website\directives\search-document\search-document.html" />
+    <Content Include="website\index-async.html" />
+    <Content Include="website\index.html" />
+    <Content Include="website\lawyers-img\1.jpg" />
+    <Content Include="website\lawyers-img\2.jpg" />
+    <Content Include="website\lawyers-img\3.jpg" />
+    <Content Include="website\lawyers-img\4.jpg" />
+    <Content Include="website\lawyers-img\5.jpg" />
+    <Content Include="website\lawyers-img\6.jpg" />
+    <Content Include="website\styles\searchCtrl\searchbox.css" />
+    <Content Include="website\SubmitCoupon\submitcoupon.html" />
+    <Content Include="website\ui-grid.css" />
+    <Content Include="website\ui-grid\ui-grid-unstable.css" />
+    <Content Include="website\ui-grid\ui-grid.eot" />
+    <Content Include="website\ui-grid\ui-grid.svg" />
+    <Content Include="website\ui-grid\ui-grid.ttf" />
+    <Content Include="website\ui-grid\ui-grid.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="website\" />
+    <Folder Include="website\dependencies\" />
+    <Folder Include="website\dependencies\bootstrap-3.3.4-dist\" />
+    <Folder Include="website\dependencies\bootstrap-3.3.4-dist\css\" />
+    <Folder Include="website\dependencies\bootstrap-3.3.4-dist\fonts\" />
+    <Folder Include="website\dependencies\bootstrap-3.3.4-dist\js\" />
+    <Folder Include="website\dependencies\components\" />
+    <Folder Include="website\dependencies\components\version\" />
+    <Folder Include="website\dependencies\html5-boilerplate_v5.1.0\" />
+    <Folder Include="website\dependencies\html5-boilerplate_v5.1.0\css\" />
+    <Folder Include="website\dependencies\html5-boilerplate_v5.1.0\doc\" />
+    <Folder Include="website\dependencies\html5-boilerplate_v5.1.0\img\" />
+    <Folder Include="website\dependencies\html5-boilerplate_v5.1.0\js\" />
+    <Folder Include="website\dependencies\html5-boilerplate_v5.1.0\js\vendor\" />
+    <Folder Include="website\directives\" />
+    <Folder Include="website\directives\carousel\" />
+    <Folder Include="website\directives\dashboard\" />
+    <Folder Include="website\directives\login\" />
+    <Folder Include="website\directives\register\" />
+    <Folder Include="website\directives\search-document\" />
+    <Folder Include="website\lawyers-img\" />
+    <Folder Include="website\styles\" />
+    <Folder Include="website\styles\searchCtrl\" />
+    <Folder Include="website\SubmitCoupon\" />
+    <Folder Include="website\ui-grid\" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

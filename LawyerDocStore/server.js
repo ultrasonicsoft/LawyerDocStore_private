@@ -24,7 +24,8 @@ connection.query('USE lawyer_doc_store');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
-app.set('views', __dirname + '/views');
+app.set('views', __dirname + '/view');
+app.set('view engine', 'ejs');
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.cookieParser());
@@ -57,7 +58,7 @@ passport.use(new LocalStrategy(
             }
             
             // if the user is found but the password is wrong
-            if (!(rows[0].password == password))
+            if (!(rows[0].Password == password))
                 //return done(null, false, req.flash('loginMessage', 'Oops! Wrong password.')); // create the loginMessage and save it to session as flashdata
                 return done(null, false, { message: 'Oops! Wrong password.' });
             
@@ -110,6 +111,5 @@ app.post('/login', passport.authenticate('local'), function (req, res) {
 //==================================================================
 // routes
 app.get('/', function (req, res) {
-
-    res.send("this is hi from server");
+    res.render('index');
 });

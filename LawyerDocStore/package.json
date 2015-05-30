@@ -8,6 +8,7 @@
         "email": ""
     },
     "dependencies": {
+        "ejs": "^2.3.1",
         "express": "^3.3.5",
         "express-myconnection": "*",
         "express-validator": "^2.9.0",
